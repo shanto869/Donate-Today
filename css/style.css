@@ -1,0 +1,172 @@
+:root {
+    --mainfont: 'Inter', sans-serif;
+    --subfont: 'Roboto', sans-serif;
+    --parafont: 'Poppins', sans-serif;
+    --footerfont: 'Lobster', cursive;
+    --brandcolor: #FF5959;
+    --brandcolor2: #FFF4D6;
+    --hovercolor: #ffa62f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* ==================
+    common css ends 
+ ================== */
+
+.inter-bold {
+    font-family: var(--mainfont);
+    font-weight: 700;
+}
+
+.inter-semi {
+    font-family: var(--mainfont);
+    font-weight: 600;
+}
+
+.poppins-semi {
+    font-family: var(--parafont);
+    font-weight: 600;
+}
+
+.poppins-reg {
+    font-family: var(--parafont);
+    font-weight: 400;
+}
+
+.raboto-medium {
+    font-family: var(--subfont);
+    font-weight: 500;
+}
+
+.lobster {
+    font-family: var(--footerfont);
+    font-weight: 600;
+}
+
+.head-style {
+    font-family: var(--mainfont);
+    font-weight: 700;
+    font-size: 45px;
+    color: #121212;
+    text-transform: capitalize;
+}
+
+.para-style {
+    font-family: var(--parafont);
+    font-weight: 400;
+    font-size: 16px;
+    color: #707070;
+    line-height: 28px;
+}
+
+.btn {
+    padding: 16px 20px;
+    background-color: var(--brandcolor);
+    font-family: var(--mainfont);
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 17px;
+    transition: all linear .2s;
+ }
+ 
+.font-16 {
+    font-size: 16px;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.txt-white {
+    color: white;
+}
+
+.head-color {
+    color: #121212;
+}
+
+.para-color {
+    color: #707070;
+}
+
+.txt-upper {
+    text-transform: uppercase;
+}
+
+.txt-cap {
+    text-transform: capitalize;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+
+/* ==================
+    typography css ends 
+ ================== */
+
+#banner {
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 670px;
+    position: relative;
+    z-index: 99;
+}
+
+#banner::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+#banner .container h1 {
+    font-size: 60px;
+    padding: 0 129px;
+    padding-top: 150px;
+}
+
+#banner .container .padding {
+    padding: 10px 242px;
+    padding-bottom: 50px;
+}
+
+#banner .container a:hover {
+   background-color: var(--hovercolor);
+   color: black;
+}
+
+/* ==================
+    banner css ends 
+ ================== */
+
+
+/* ==================
+    donate-today css ends 
+ ================== */
